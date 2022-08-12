@@ -29,7 +29,7 @@ public class BubbleFrame extends JFrame {
 	}
 
 	private void initSetting() {
-		setSize(1000, 640);
+		setSize(1000, 500);
 		setLayout(null); // absolute 레이아웃
 		setLocationRelativeTo(null); // JFrame 가운데에 뜸
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // x버튼으로 창을 끌 때 JVM 같이 종료하기
