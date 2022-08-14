@@ -1,5 +1,5 @@
 
-package bubble.test.ex04;
+package bubble.test.ex05;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
