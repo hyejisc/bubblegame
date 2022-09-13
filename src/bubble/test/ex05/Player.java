@@ -120,6 +120,18 @@ public class Player extends JLabel implements Moveable {
 
 	@Override
 	public void down() {
-
+		down = true;
+		new Thread(()->{
+			for(int i=0; i<130/JUMPSPEED; i++) {
+				y += JUMPSPEED;
+				setLocation(x, y);
+				try {
+					Thread.sleep(10);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+			down = false;
+		}).start();
 	}
 }
